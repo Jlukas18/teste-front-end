@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <!-- PAGE INFO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escola de programaçao</title>
+
+  <!-- Icones -->
+  <link rel="stylesheet" href="assets/fonts/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="#">Logo<span>Escola</span>.</a>
+      <!-- menu -->
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#instrucoes">Instruções</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#cadastro">Cadastro</a></li>
+          <li><a class="title" href="#lista">Lista de alunos</a></li>
+        </ul>
+      </div>
+      <!-- /menu -->
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img
+            src=https://images.unsplash.com/photo-1558949623-35b2e2649754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
+            alt="Mulher sorrindo penteando outra mulher" />
+        </div>
+        <div class="text">
+          <h2 class="title">Este e um teste de programaçao Front-end</h2>
+          <p>Vamos fazer um cadrasto de alunos bsicos e uma listagem</p>
+          <a class="button" href="#cadastro">Cadastrar aluno</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-1"></div>
+
+    <!-- Instruções -->
+
+      <section class="section" id="instrucoes">
+        <div class="instrucoes">
+          <header>
+            <h2 class="title">Instruções</h2>
+          </header>
+          <div class="cards instrucoes">
+            <div class="card1 instrucoes">
+              <h3 class="title">Como se cadastrar</h3>
+              <p>
+                Preencha o formulário com seus dados, fique atento seus dados devem ser válidos e únicos, só são aceitos cadastros únicos de CPF.
+              </p>
+            </div>
+            <div class="card1">
+              <h3 class="title">Lista de cadastros</h3>
+              <p>A lista de cadastros está presente na seção "lista de alunos", é possivel realizar a exclusão de um cadastro.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="divider-1"></div>
+
+    <!-- Sobre nós -->
+    <section class="section" id="about">
+      <div class="container grid">
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="computadores na mesa" />
+        </div>
+        <div class="text">
+          <h2 class="title">Sobre nós</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus deleniti perferendis vel molestiae soluta, quaerat
+            beatae dicta ducimus praesentium architecto harum dolorum
+            distinctio illo earum assumenda itaque. Omnis, quam repellat.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            illum ratione impedit quae eum quis adipisci asperiores, est
+            doloribus distinctio excepturi minima eius dolore! Perferendis
+            laborum illo aspernatur repellendus ipsum.
+          </p>
+          <br />
+          <a class="button" href="#cadastro">Cadastrar aluno</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!-- Formulário -->
+    <section class="section" id="cadastro">
+      <header>
+        <h2 class="title">Cadrasto Aluno</h2>
+      </header>
+
+      <form class="form-container" id="form-container">
+        <div class="div-form-item">
+          <form id="form" class="form">
+            <div class="form-item">
+              <label for="student-name">Nome</label>
+              <input type="text" id="student-name" placeholder="Digite o nome do aluno">
+              <small>Mensagem de erro</small>
+            </div>
+        </div>
+
+        <div class="div-form-item">
+            <div class="form-item">
+              <label for="student-name">Email</label>
+              <input type="text" id="student-email" placeholder="Digite o email do aluno">
+              <small>Mensagem de erro</small>
+            </div>
+        </div>
+
+        <div class="div-form-item">
+            <div class="form-item">
+              <label for="student-name">Cpf</label>
+              <input type="text" id="student-cpf" placeholder="Digite o cpf do aluno">
+              <small>Mensagem de erro</small>
+            </div>
+        </div>
+
+        <div class="div-form-item">
+            <div class="form-item">
+              <label for="student-name">Curso</label>
+              <input type="text" id="student-curso" placeholder="Curso do aluno">
+              <small>Mensagem de erro</small>
+            </div>
+        </div>
+      </form>
+      <button id= "btn-submit-student">Cadastrar</a>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!-- Lista -->
+
+    <section class="section" id="lista">
+        <header>
+          <h2 class="title">Lista de Alunos</h2>
+        </header>
+
+        <div class="table-container">
+          <div id="">
+            <div class="divTable">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CPF</th>
+                    <th>Curso</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Logo<span>Escola</span>.</a>
+          <p>©2022 LogoEscola .</p>
+          <p>Teste de progamação front-endd.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
